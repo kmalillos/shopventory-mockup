@@ -1,28 +1,23 @@
 $(document).ready(function () {
 
-function displayList () {
-    // https://dog.ceo/api/breeds/list/all
+    function displayList() {
 
-    $.ajax({
-        url: "https://dog.ceo/api/breeds/list/all",
-        method: "GET"
-    })
-    .then(function(res) {
- 
-        const arr = Object.keys(res.message);
-        console.log(arr);
+        $.ajax({
+            url: "https://dog.ceo/api/breeds/list/all",
+            method: "GET"
+        })
+            .then(function (res) {
 
-        $("#dog-breeds").text(arr.join("\n"));
+                let dogArr = Object.keys(res.message);
+                // console.log(arr);
+                // $("#dog-breeds").text(dogArr.join("\n"));
 
-        // for (let i = 0; i < arr.length; i++) {
-        //     $("#dog-breeds").text(arr[i]);
-        // }
-
-        // $("#dog-breeds").text()
-        
-    })
-
-}
+                for (let i = 0; i < dogArr.length; i++) {
+                    console.log(dogArr[i]);
+                    $("#dog-text").append("<li class='dog-breeds'>" + dogArr[i] + "</li>")
+                }
+            })
+    }
 
     displayList();
 

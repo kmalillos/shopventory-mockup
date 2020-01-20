@@ -1,49 +1,72 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
 }
 
-ul {
-    margin: 0;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.cover-page {
+    background-image: linear-gradient(to right, #146EB5, #76d89f);
+    background-size: auto;
 }
 
-li {
-    padding: 5px;
+.cover-content {
+    padding: 0px 100px;
+}
+
+.flex-box-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #fff;
+    font-size: 28px;
 }
 
 .menu {
-    list-style-type: none;
     color: #fff;
+    display: inline-flex;
+    list-style-type: none;
+    padding: 15px;
+    text-align: right;
     text-decoration: underline;
 }
 
-.cover-page {
-    background-color: #146EB5;
-    background-size: auto;
-    margin: 0;
+.menu-list {
+    font-size: 20px;
+    padding: 25px;
 }
 
-.both-areas {
+.flex-box-cover {
     display: flex;
+    align-items: flex-start;
     justify-content: space-around;
 }
 
-.left-area {
-    color: #fff;
-}
-
-.right-area {
-   
+.cover-text {
+    color: #ffffff;
+    padding-right: 200px;
 }
 
 .box {
     background-color: #000;
-    height: 300px;
-    width: 600px;
+    height: 275px;
+    width: 475px;
+    margin-bottom: 100px;
+}
+
+.list-title {
+    text-decoration: underline;
+}
+
+.dog-list {
+    list-style: none;
+    padding-left: 0;
 }
 
 .dog-breeds {
-    color: #000;
+    text-transform: capitalize;
+    list-style-type: none;
+    padding: 10px;
 }
+
