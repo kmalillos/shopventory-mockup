@@ -1,0 +1,49 @@
+body {
+    margin: 0px;
+}
+
+ul {
+    margin: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+li {
+    padding: 5px;
+}
+
+.menu {
+    list-style-type: none;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.cover-page {
+    background-color: #146EB5;
+    background-size: auto;
+    margin: 0;
+}
+
+.both-areas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-area {
+    color: #fff;
+}
+
+.right-area {
+   
+}
+
+.box {
+    background-color: #000;
+    height: 300px;
+    width: 600px;
+}
+
+.dog-breeds {
+    color: #000;
+}
